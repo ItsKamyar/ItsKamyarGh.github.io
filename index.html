@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ItsKamyar | Rainbow Six Siege 3D Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav class="navbar">
+    <div class="logo">ITSKAMYAR<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#operators">Operators</a></li>
+      <li><a href="#maps">Maps</a></li>
+      <li><a href="#upload">Upload</a></li>
+      <li><a href="#comments">Comments</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="online-badge" id="online-badge" title="Visitors online (demo)">
+        <span class="online-dot"></span>
+        <span id="online-count">1</span> online
+      </div>
+      <button class="edit-mode-btn" id="edit-mode-btn" title="Edit Photos">✎ Edit Photos</button>
+      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">TACTICAL OPERATIONS</p>
+      <h1>RAINBOW SIX SIEGE</h1>
+      <p class="hero-subtitle">Precision. Strategy. Destruction.<br>Welcome to ItsKamyar’s 3D Siege Gallery</p>
+      <div class="hero-buttons">
+        <a href="#operators" class="btn-3d">Operators</a>
+        <a href="#maps" class="btn-3d btn-outline">Maps</a>
+        <a href="#comments" class="btn-3d btn-outline">Comments</a>
+      </div>
+      <p class="visitor-info">Total visits: <strong id="visit-count">—</strong></p>
+    </div>
+  </section>
+
+  <!-- OPERATORS -->
+  <section id="operators" class="gallery-section">
+    <h2 class="section-title">All <span>Operators</span></h2>
+    <p class="section-desc">Attackers & Defenders with abilities • Hover to flip • Edit mode for custom photos</p>
+
+    <div class="op-tabs">
+      <button class="op-tab active" data-side="all">All</button>
+      <button class="op-tab" data-side="atk">Attackers</button>
+      <button class="op-tab" data-side="def">Defenders</button>
+    </div>
+
+    <div class="gallery-3d" id="operators-gallery">
+      <!-- Filled by script.js from tier list data -->
+    </div>
+  </section>
+
+  <!-- MAPS (keep existing expanded set) -->
+  <section id="maps" class="maps-section">
+    <h2 class="section-title">Featured <span>Maps</span></h2>
+    <p class="section-desc">Iconic battlegrounds • Use Edit Photos to change images</p>
+    <div class="maps-grid">
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80')"></div><div class="map-info"><h3>Bank</h3><p>Los Angeles bank with vault and vertical play.</p><button class="change-photo-btn map-btn" data-key="map-bank">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80')"></div><div class="map-info"><h3>Clubhouse</h3><p>Motorcycle club, classic basement executes.</p><button class="change-photo-btn map-btn" data-key="map-clubhouse">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80')"></div><div class="map-info"><h3>Oregon</h3><p>Rural compound with strong verticality.</p><button class="change-photo-btn map-btn" data-key="map-oregon">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1518780664697-55e3abfb2b2b?w=800&q=80')"></div><div class="map-info"><h3>Chalet</h3><p>Alpine lodge, fireplace & master bedroom.</p><button class="change-photo-btn map-btn" data-key="map-chalet">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80')"></div><div class="map-info"><h3>Kafe Dostoyevsky</h3><p>Moscow café with snowy exterior.</p><button class="change-photo-btn map-btn" data-key="map-kafe">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80')"></div><div class="map-info"><h3>Consulate</h3><p>Diplomatic building, garage & lobby.</p><button class="change-photo-btn map-btn" data-key="map-consulate">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80')"></div><div class="map-info"><h3>Border</h3><p>Desert border facility, mid control.</p><button class="change-photo-btn map-btn" data-key="map-border">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80')"></div><div class="map-info"><h3>Villa</h3><p>Luxury Italian villa with cellar.</p><button class="change-photo-btn map-btn" data-key="map-villa">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80')"></div><div class="map-info"><h3>House</h3><p>Classic suburban house.</p><button class="change-photo-btn map-btn" data-key="map-house">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1582268615500-78b96303bdc0?w=800&q=80')"></div><div class="map-info"><h3>Kanal</h3><p>Canal & shipping long sightlines.</p><button class="change-photo-btn map-btn" data-key="map-kanal">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80')"></div><div class="map-info"><h3>Coastline</h3><p>Mediterranean hotel and pool.</p><button class="change-photo-btn map-btn" data-key="map-coastline">📷 Change</button></div></div>
+      <div class="map-card"><div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.55),transparent),url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80')"></div><div class="map-info"><h3>Theme Park</h3><p>Abandoned amusement park.</p><button class="change-photo-btn map-btn" data-key="map-themepark">📷 Change</button></div></div>
+    </div>
+  </section>
+
+  <!-- UPLOAD -->
+  <section id="upload" class="upload-section">
+    <h2 class="section-title">Upload Your <span>Clips</span></h2>
+    <p class="section-desc">Share best Siege highlights (client-side preview)</p>
+    <div class="upload-container">
+      <div class="upload-zone" id="upload-zone">
+        <div class="upload-icon">🎬</div>
+        <h3>Drop video here or click to browse</h3>
+        <p>MP4, WebM, MOV • Under 100MB recommended</p>
+        <input type="file" id="video-input" accept="video/*" multiple hidden />
+        <button type="button" class="btn-3d" id="browse-btn">Select Videos</button>
+      </div>
+      <div class="upload-status" id="upload-status"></div>
+      <div class="clips-gallery" id="clips-gallery"></div>
+    </div>
+  </section>
+
+  <!-- COMMENTS -->
+  <section id="comments" class="comments-section">
+    <h2 class="section-title">Community <span>Comments</span></h2>
+    <p class="section-desc">Share your thoughts • Stored in your browser (local)</p>
+    <div class="comments-container">
+      <form class="comment-form" id="comment-form">
+        <input type="text" id="comment-name" placeholder="Your name" required maxlength="40" />
+        <textarea id="comment-text" placeholder="Write a comment..." required maxlength="500" rows="3"></textarea>
+        <button type="submit" class="btn-3d">Post Comment</button>
+      </form>
+      <div class="comments-list" id="comments-list"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">About <span>ItsKamyar</span></h2>
+    <div class="about-content">
+      <p>ItsKamyar is a dedicated 3D gallery for <strong>Tom Clancy’s Rainbow Six Siege</strong>. Explore operators, maps and tactical depth.</p>
+      <p>From hard-breach opens to clutch 1vX — strategy meets destruction.</p>
+      <div class="stats">
+        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Operators shown</span></div>
+        <div class="stat"><span class="stat-num">12</span><span class="stat-label">Maps</span></div>
+        <div class="stat"><span class="stat-num">5v5</span><span class="stat-label">Tactical FPS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <form class="contact-form" id="contact-form">
+      <div class="form-group"><input type="text" placeholder="Your Name" required /></div>
+      <div class="form-group"><input type="email" placeholder="Your Email" required /></div>
+      <div class="form-group"><textarea placeholder="Message" rows="5" required></textarea></div>
+      <button type="submit" class="btn-3d">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 ItsKamyar • Rainbow Six Siege Fan Gallery • Not affiliated with Ubisoft</p>
+  </footer>
+
+  <input type="file" id="photo-input" accept="image/*" hidden />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
