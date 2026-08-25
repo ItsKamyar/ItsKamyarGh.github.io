@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ItsKamyar | Rainbow Six Siege 3D Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+
+  <nav class="navbar">
+    <div class="logo">ITSKAMYAR<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#operators">Operators</a></li>
+      <li><a href="#maps">Maps</a></li>
+      <li><a href="#upload">Upload</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="edit-mode-btn" id="edit-mode-btn" title="Edit Photos">✎ Edit Photos</button>
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">TACTICAL OPERATIONS</p>
+      <h1>RAINBOW SIX SIEGE</h1>
+      <p class="hero-subtitle">Precision. Strategy. Destruction.<br>Welcome to ItsKamyar’s 3D Siege Gallery</p>
+      <div class="hero-buttons">
+        <a href="#operators" class="btn-3d">Operators</a>
+        <a href="#maps" class="btn-3d btn-outline">Maps</a>
+        <a href="#upload" class="btn-3d btn-outline">Upload Clip</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPERATORS -->
+  <section id="operators" class="gallery-section">
+    <h2 class="section-title">Elite <span>Operators</span></h2>
+    <p class="section-desc">Hover cards to flip • 3D interactive gallery</p>
+    <div class="gallery-3d" id="operators-gallery">
+      <!-- cards injected or static below -->
+      <div class="card-3d">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-img" style="background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.75)),url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/QOEBDfqjtUxVBc31l8L9f/4d9b112565baf81d56d69279b95cd463/r6-operators-list-ash_317253.png')"></div>
+            <div class="op-badge atk">ATK</div>
+            <h3>Ash</h3><p>FBI SWAT</p>
+            <button class="change-photo-btn" data-key="op-ash" title="Change photo">📷</button>
+          </div>
+          <div class="card-back">
+            <h3>Ash</h3>
+            <p class="op-role">Attacker • Soft Breach</p>
+            <p>M120 CREM breaching rounds. High mobility entry fragger.</p>
+            <span class="tag">Speed 3 • Armor 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-3d">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-img" style="background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.75)),url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/3NQW8lJVslVSaYSiBlAleU/09fd8e3e946f2e71f39182b9ff18dd77/r6-operators-list-thermite.png')"></div>
+            <div class="op-badge atk">ATK</div>
+            <h3>Thermite</h3><p>FBI SWAT</p>
+            <button class="change-photo-btn" data-key="op-thermite" title="Change photo">📷</button>
+          </div>
+          <div class="card-back">
+            <h3>Thermite</h3>
+            <p class="op-role">Attacker • Hard Breach</p>
+            <p>Exothermic Charges open large holes in reinforced walls.</p>
+            <span class="tag">Speed 2 • Armor 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-3d">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-img" style="background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.75)),url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/Z9R1Anc8MHwbG5iyPoOf2/69fe9aee30e03322a4e09d4b87de15aa/r6-operators-list-twitch.png')"></div>
+            <div class="op-badge atk">ATK</div>
+            <h3>Twitch</h3><p>GIGN</p>
+            <button class="change-photo-btn" data-key="op-twitch" title="Change photo">📷</button>
+          </div>
+          <div class="card-back">
+            <h3>Twitch</h3>
+            <p class="op-role">Attacker • Shock Drure</p>
+            <p>Shock Drones destroy gadgets and gather intel safely.</p>
+            <span class="tag">Speed 2 • Armor 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-3d">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-img" style="background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.75)),url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/4kMW2lcoewGifRWbvQVjKy/8f974b5d26db81dc823ea602e31d6273/r6-operators-list-jager.png')"></div>
+            <div class="op-badge def">DEF</div>
+            <h3>Jäger</h3><p>GSG 9</p>
+            <button class="change-photo-btn" data-key="op-jager" title="Change photo">📷</button>
+          </div>
+          <div class="card-back">
+            <h3>Jäger</h3>
+            <p class="op-role">Defender • Anti-Projectile</p>
+            <p>Active Defense Systems intercept grenades and projectiles.</p>
+            <span class="tag">Speed 3 • Armor 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-3d">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-img" style="background-image:linear-gradient(to bottom,rgba(0,0,0,.2),rgba(0,0,0,.75)),url('https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2cFHG0Xk93uoGrm5nTjDPE/2211339df9b36c1b0d9873e480d03fad/r6-operators-list-bandit.png')"></div>
+            <div class="op-badge def">DEF</div>
+            <h3>Bandit</h3><p>GSG 9</p>
+            <button class="change-photo-btn" data-key="op-bandit" title="Change photo">📷</button>
+          </div>
+          <div class="card-back">
+            <h3>Bandit</h3>
+            <p class="op-role">Defender • Electrocuted Walls</p>
+            <p>Crude Electrical Devices destroy hard-breach gadgets on contact.</p>
+            <span class="tag">Speed 3 • Armor 1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-3d">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-img" style="background-image:linear-gradient(160deg,#0a1218,#0d2a3a 50%,#00a8e8);display:flex;align-items:center;justify-content:center;font-size:4rem;">💀</div>
+            <div class="op-badge def">DEF</div>
+            <h3>Smoke</h3><p>SAS</p>
+            <button class="change-photo-btn" data-key="op-smoke" title="Change photo">📷</button>
+          </div>
+          <div class="card-back">
+            <h3>Smoke</h3>
+            <p class="op-role">Defender • Area Denial</p>
+            <p>Remote Gas Grenades create toxic zones to delay plants and retakes.</p>
+            <span class="tag">Speed 2 • Armor 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-3d">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-img" style="background-image:linear-gradient(160deg,#0c1018,#122535 50%,#0077a8);display:flex;align-items:center;justify-content:center;font-size:4rem;">🔇</div>
+            <div class="op-badge def">DEF</div>
+            <h3>Mute</h3><p>SAS</p>
+            <button class="change-photo-btn" data-key="op-mute" title="Change photo">📷</button>
+          </div>
+          <div class="card-back">
+            <h3>Mute</h3>
+            <p class="op-role">Defender • Signal Disruption</p>
+            <p>Signal Disruptors jam drones and electronic gadgets in radius.</p>
+            <span class="tag">Speed 2 • Armor 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-3d">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="card-img" style="background-image:linear-gradient(160deg,#12100a,#2a2208 50%,#c9a227);display:flex;align-items:center;justify-content:center;font-size:4rem;">⚡</div>
+            <div class="op-badge atk">ATK</div>
+            <h3>Thatcher</h3><p>SAS</p>
+            <button class="change-photo-btn" data-key="op-thatcher" title="Change photo">📷</button>
+          </div>
+          <div class="card-back">
+            <h3>Thatcher</h3>
+            <p class="op-role">Attacker • EMP Support</p>
+            <p>EMP Grenades disable Bandit batteries, Mute jammers and traps.</p>
+            <span class="tag">Speed 2 • Armor 2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAPS -->
+  <section id="maps" class="maps-section">
+    <h2 class="section-title">All Featured <span>Maps</span></h2>
+    <p class="section-desc">Iconic battlegrounds of Rainbow Six Siege</p>
+    <div class="maps-grid">
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80')"></div>
+        <div class="map-info"><h3>Bank</h3><p>Los Angeles bank with vault, multi-level vertical play.</p>
+        <button class="change-photo-btn map-btn" data-key="map-bank" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80')"></div>
+        <div class="map-info"><h3>Clubhouse</h3><p>Motorcycle club, classic basement workshop executes.</p>
+        <button class="change-photo-btn map-btn" data-key="map-clubhouse" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80')"></div>
+        <div class="map-info"><h3>Oregon</h3><p>Rural survivalist compound with strong verticality.</p>
+        <button class="change-photo-btn map-btn" data-key="map-oregon" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1518780664697-55e3abfb2b2b?w=800&q=80')"></div>
+        <div class="map-info"><h3>Chalet</h3><p>Alpine lodge, fireplace & master bedroom sites.</p>
+        <button class="change-photo-btn map-btn" data-key="map-chalet" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80')"></div>
+        <div class="map-info"><h3>Kafe Dostoyevsky</h3><p>Moscow café with rich interior and snowy exterior.</p>
+        <button class="change-photo-btn map-btn" data-key="map-kafe" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80')"></div>
+        <div class="map-info"><h3>Consulate</h3><p>Diplomatic building, classic garage and lobby sites.</p>
+        <button class="change-photo-btn map-btn" data-key="map-consulate" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80')"></div>
+        <div class="map-info"><h3>Border</h3><p>Desert border facility, strong mid control fights.</p>
+        <button class="change-photo-btn map-btn" data-key="map-border" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80')"></div>
+        <div class="map-info"><h3>Villa</h3><p>Luxury Italian villa with art gallery and cellar.</p>
+        <button class="change-photo-btn map-btn" data-key="map-villa" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80')"></div>
+        <div class="map-info"><h3>House</h3><p>Classic suburban house, great for new players.</p>
+        <button class="change-photo-btn map-btn" data-key="map-house" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1582268615500-78b96303bdc0?w=800&q=80')"></div>
+        <div class="map-info"><h3>Kanal</h3><p>Canal and shipping area with long sightlines.</p>
+        <button class="change-photo-btn map-btn" data-key="map-kanal" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80')"></div>
+        <div class="map-info"><h3>Coastline</h3><p>Mediterranean hotel and pool, open vertical play.</p>
+        <button class="change-photo-btn map-btn" data-key="map-coastline" title="Change photo">📷 Change</button></div>
+      </div>
+      <div class="map-card">
+        <div class="map-visual" style="background-image:linear-gradient(to top,rgba(0,0,0,.6),transparent),url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80')"></div>
+        <div class="map-info"><h3>Theme Park</h3><p>Abandoned amusement park with unique rooms.</p>
+        <button class="change-photo-btn map-btn" data-key="map-themepark" title="Change photo">📷 Change</button></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPLOAD -->
+  <section id="upload" class="upload-section">
+    <h2 class="section-title">Upload Your <span>Clips</span></h2>
+    <p class="section-desc">Share best Rainbow Six Siege highlights (client-side preview)</p>
+    <div class="upload-container">
+      <div class="upload-zone" id="upload-zone">
+        <div class="upload-icon">🎬</div>
+        <h3>Drop video here or click to browse</h3>
+        <p>MP4, WebM, MOV • Recommended under 100MB</p>
+        <input type="file" id="video-input" accept="video/*" multiple hidden />
+        <button type="button" class="btn-3d" id="browse-btn">Select Videos</button>
+      </div>
+      <div class="upload-status" id="upload-status"></div>
+      <div class="clips-gallery" id="clips-gallery"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">About <span>ItsKamyar</span></h2>
+    <div class="about-content">
+      <p>ItsKamyar is a dedicated 3D gallery for <strong>Tom Clancy’s Rainbow Six Siege</strong>. Explore operators, maps and tactical depth that defines the game.</p>
+      <p>From hard-breach opens to clutch 1vX — strategy meets destruction.</p>
+      <div class="stats">
+        <div class="stat"><span class="stat-num">70+</span><span class="stat-label">Operators</span></div>
+        <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Maps</span></div>
+        <div class="stat"><span class="stat-num">5v5</span><span class="stat-label">Tactical FPS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <form class="contact-form" id="contact-form">
+      <div class="form-group"><input type="text" placeholder="Your Name" required /></div>
+      <div class="form-group"><input type="email" placeholder="Your Email" required /></div>
+      <div class="form-group"><textarea placeholder="Message" rows="5" required></textarea></div>
+      <button type="submit" class="btn-3d">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 ItsKamyar • Rainbow Six Siege Fan Gallery • Not affiliated with Ubisoft</p>
+  </footer>
+
+  <input type="file" id="photo-input" accept="image/*" hidden />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
